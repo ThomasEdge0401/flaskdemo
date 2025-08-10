@@ -1,8 +1,9 @@
 {% extends "layout.html" %}
-{% block title %}Search Wikipedia{% endblock %}
+{% block title %}Search · Flask + Wikipedia Demo{% endblock %}
 {% block content %}
-<form method="post" action="">
-    <p><label>Search Wikipedia: <input type="text" id="search" name="search"></label></p>
-    <p><input type="submit" id="submit" value="Search"></p>
-</form>
+  <h1>Search</h1>
+  <form method="post" action="{{ url_for('search') }}">
+    <input type="text" name="search" placeholder="Enter a page title or phrase" required>
+    <button type="submit">Search</button>
+  </form>
 {% endblock %}

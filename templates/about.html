@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}About · Flask + Wikipedia Demo{% endblock %}
+{% block content %}
+  <h1>About</h1>
+  <div class="card">
+    <p>This demo shows:</p>
+    <ul>
+      <li>Jinja templates and template inheritance</li>
+      <li>Form handling with <code>POST</code> and the <code>request</code> object</li>
+      <li>Use of <code>url_for()</code> to generate correct links</li>
+      <li>Integrating the <code>wikipedia</code> package with Flask</li>
+      <li>Basic session usage for passing the last search term between routes</li>
+    </ul>
+    <p class="muted">Note: In production, set <code>SECRET_KEY</code> via an environment variable, not hard-coded.</p>
+  </div>
+{% endblock %}

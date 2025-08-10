@@ -1,5 +1,9 @@
 {% extends "layout.html" %}
-{% block title %}Home{% endblock %}
+{% block title %}Home · Flask + Wikipedia Demo{% endblock %}
 {% block content %}
-    <p>This is the home page. It's not exciting yet...</p>
+  <h1>Welcome</h1>
+  <div class="card">
+    <p>Search Wikipedia and show tidy results using Jinja templates and template inheritance.</p>
+    <p><a href="{{ url_for('search') }}">Try a search</a> to get started.</p>
+  </div>
 {% endblock %}
